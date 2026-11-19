@@ -1,0 +1,1322 @@
+LOBORO — COMPLETE GLOBAL JOB & SERVICE APP
+
+MASTER DEVELOPMENT PROMPT FOR GEMINI
+
+You are a senior full-stack software engineer, UI/UX designer, database architect, security engineer, and mobile/PWA developer.
+
+Your task is to design and develop a complete, professional, scalable, secure, multilingual global job and service platform named LOBORO.
+
+Do not create just a static landing page or a simple demo. Build a real, modular application with a clear development roadmap, functional frontend, database-ready architecture, authentication structure, and properly documented backend integration points.
+
+The app must be easy to use for educated users as well as people who cannot read or type comfortably.
+
+The platform should initially support India and be architected for expansion to other countries.
+
+---
+
+1. BRAND IDENTITY AND DESIGN
+
+App Name: LOBORO
+
+Short Name: LOBORO
+
+App Description: Global Job & Service
+
+LOBORO must have a professional, memorable, international-quality brand identity.
+
+Mandatory brand colours
+
+Use ONLY this colour system:
+
+- Dark Navy Blue: #0B1F3A
+- Yellow: #FFD43B
+- White: #FFFFFF
+- Red: #D71920 (only for important Admin notices, warnings, and emergency alerts where appropriate).
+
+IMPORTANT: NEVER USE GREEN ANYWHERE IN THE APP.
+
+Do not use green buttons, green icons, green badges, green backgrounds, green success messages, or green status indicators.
+
+Use navy blue, yellow, white, and suitable red warning elements instead.
+
+Professional LOBORO logo
+
+Create an original, attractive, premium-quality LOBORO logo.
+
+Logo concept:
+
+- A beautiful circular emblem containing a bold capital letter "L".
+- The design should be modern, clean, recognizable, and suitable for a global employment platform.
+- Use dark navy blue and yellow as the primary logo colours.
+- The letter L should be clearly visible.
+- Make the logo look professional at both large and very small sizes.
+- Create a primary logo, compact app icon, favicon, splash-screen logo, and notification icon.
+- Use consistent branding throughout the application.
+- Do not use random stock logos or unrelated symbols.
+- Provide the logo as reusable SVG or another suitable scalable format.
+
+The logo should look excellent on the login page, home page, wallet, splash screen, and Android app icon.
+
+App interface
+
+- Premium dark navy blue and yellow design.
+- Clean cards and simple navigation.
+- Large readable text.
+- Clear icons and buttons.
+- Responsive mobile-first layout.
+- Accessible interface for elderly and low-literacy users.
+- Fast loading and low-data usage.
+- Consistent spacing, typography, and visual hierarchy.
+
+---
+
+2. LOBORO COIN — GOLDEN ANIMATED COIN
+
+Create a unique digital reward and payment unit named LOBORO Coin.
+
+The LOBORO Coin must have its own attractive visual identity.
+
+Coin appearance
+
+- Gold-coloured coin.
+- Beautiful metallic golden appearance.
+- Clearly display the LOBORO identity or an L symbol.
+- Add a continuous, smooth shimmer and glow animation.
+- Add a subtle golden shine that moves across the coin.
+- Use a professional animation, not a distracting flashing effect.
+- The animation should be lightweight and optimized for mobile phones.
+- Respect reduced-motion accessibility settings.
+
+Show the animated coin in:
+
+- Wallet balance.
+- Coin purchase screen.
+- Transaction history.
+- Rewards and referral screens.
+- Job posting fee screens.
+- Offers and promotional rewards.
+- Relevant dashboard sections.
+
+The LOBORO Coin must look premium and recognizable.
+
+Wallet requirements
+
+Every user must have a wallet.
+
+Wallet features:
+
+- Available coin balance.
+- Purchase coins.
+- Receive gifted coins.
+- Receive promotional coins.
+- Receive referral rewards.
+- Receive badge rewards.
+- Withdraw coins.
+- View complete transaction history.
+- View pending, successful, and failed transactions.
+- Download or view transaction receipts.
+
+MANDATORY WITHDRAWAL RULE:
+
+Every coin credited to a user's wallet must have equal cash value and full withdrawal eligibility, regardless of whether it came from:
+
+- Purchased coins.
+- Gifts.
+- Promotional offers.
+- Referral rewards.
+- Badge rewards.
+- Loyalty rewards.
+- Other approved credits.
+
+Do not create locked coins, non-withdrawable promotional coins, or arbitrary minimum withdrawal amounts.
+
+Users may request withdrawal of any amount up to their available withdrawable balance, subject to applicable banking, KYC, payment-provider, fraud-prevention, and legal requirements.
+
+Clearly show any applicable processing conditions before withdrawal.
+
+Do not silently deduct coins.
+
+Maintain a complete, auditable wallet ledger.
+
+Never allow duplicate credits, unauthorized debits, or negative balances.
+
+---
+
+3. USER TYPES AND REGISTRATION
+
+There are three main account types:
+
+1. Worker.
+2. Employer.
+3. Owner / Super Admin.
+
+Worker registration
+
+Collect appropriate information:
+
+- Full name.
+- Mobile number.
+- OTP verification.
+- Preferred language.
+- Current location.
+- Home state and home district.
+- Job skills.
+- Experience.
+- Daily or monthly job preference.
+- Profile photograph.
+- Registration face photograph using the camera.
+- Emergency contact and family contact details, with consent.
+- Relevant optional information.
+
+Do not demand unnecessary sensitive information.
+
+Employer registration
+
+Collect:
+
+- Employer or business name.
+- Mobile number.
+- OTP verification.
+- Business category.
+- Business address.
+- City, state, and country.
+- Contact person.
+- Job posting information.
+- Appropriate business verification details.
+
+Do not make Aadhaar mandatory for every ordinary employer unless legally required or necessary for a specific verification process.
+
+Unique user IDs
+
+Every Worker and Employer must receive a unique LOBORO ID.
+
+Examples:
+
+- LB269
+- LB049
+- LB3232
+
+Rules:
+
+- Never generate duplicate IDs.
+- Maintain a central ID registry.
+- Never automatically issue reserved VIP IDs.
+- Reserve special and attractive IDs for the Owner.
+- Reserve IDs such as LB1, LB2, LB3, LB4, LB10, LB11, LB22, LB33, LB100, LB101, LB111, LB123, LB222, LB333, LB7777, and similar special-number combinations.
+- Owner must have a separate, harder-to-guess Admin ID.
+- Allow only the Owner to securely change their own Admin login ID.
+- Never allow an ordinary user or normal Admin to claim the Owner's ID.
+
+The Admin ID alone must never be sufficient for authentication.
+
+Owner account security
+
+- Owner-only Super Admin registration and access.
+- Strong authentication.
+- OTP and multi-factor authentication.
+- Secure password storage.
+- Session management.
+- Audit logs.
+- Secure account recovery.
+- No ordinary user can promote themselves to Admin.
+
+---
+
+4. APP LANGUAGE SYSTEM — 12 LANGUAGES
+
+Add a clearly visible language selector near the top of the application.
+
+Initial supported languages must include:
+
+1. Hindi.
+2. English.
+3. Gujarati.
+4. Marathi.
+5. Telugu.
+6. Tamil.
+7. Bengali.
+8. Assamese.
+9. Kannada.
+10. Malayalam.
+11. Punjabi.
+12. Odia.
+
+Allow future language additions.
+
+The language selector must be independent of the user's profile settings.
+
+When a user changes the language, the entire app interface must change consistently.
+
+This includes:
+
+- Home page.
+- Menus.
+- Buttons.
+- Forms.
+- Job categories.
+- Job descriptions.
+- Search.
+- Filters.
+- Wallet.
+- Payments.
+- Notifications.
+- Popups.
+- Help.
+- Emergency support.
+- Settings.
+- Admin dashboard.
+
+Use a centralized translation system.
+
+Do not hardcode interface text throughout individual components.
+
+Automatic job translation
+
+If an employer posts a job in Telugu, a Hindi-speaking worker should be able to understand it in Hindi.
+
+If a worker uses Assamese, show job information in Assamese wherever a translation is available.
+
+Preserve the original job description and provide translated versions.
+
+Use a genuine translation integration when available. Do not pretend that translation is working when no translation service is connected.
+
+---
+
+5. HOME PAGE AND NAVIGATION
+
+Create a simple, professional home page.
+
+Main navigation should include:
+
+- Home.
+- Search Jobs.
+- Post a Job.
+- Wallet.
+- My Applications.
+- My Jobs.
+- Notifications.
+- Help & Safety.
+- Profile.
+- Settings.
+
+Provide clearly visible Home and Back navigation.
+
+Add a prominent Share LOBORO App option.
+
+Share App feature
+
+Allow users to share the app through:
+
+- WhatsApp.
+- Telegram.
+- Instagram.
+- SMS.
+- Other installed sharing apps.
+- Copy Link.
+- Native mobile share menu.
+
+Generate a valid referral link when referral tracking is enabled.
+
+Do not create fake or non-working share buttons.
+
+---
+
+6. VOICE SEARCH — IMPORTANT ACCESSIBILITY FEATURE
+
+Add a clearly visible microphone button inside the main job search bar.
+
+This feature is essential because many workers cannot comfortably read or type.
+
+How it should work
+
+1. User opens the LOBORO app.
+2. User sees the job search bar.
+3. A large, easy-to-understand microphone icon appears inside or next to the search bar.
+4. User taps the microphone.
+5. App asks for microphone permission when required.
+6. App listens to the user's spoken request.
+7. Speech is converted into text.
+8. The recognized text appears in the search bar.
+9. User can edit the text or directly search.
+10. Display matching jobs.
+
+Examples of spoken searches:
+
+- "मुझे हैदराबाद में राजमिस्त्री का काम चाहिए।"
+- "मुझे चेन्नई में होटल में नौकरी चाहिए।"
+- "मुझे रोज का काम चाहिए।"
+- "मुझे महीने की सैलरी वाला काम चाहिए।"
+- "मुझे बिजली का काम चाहिए।"
+- "मुझे विजयवाड़ा में ड्राइवर की नौकरी चाहिए।"
+
+The app should recognize supported languages, including Hindi, English, Telugu, Tamil, Bengali, Assamese, Gujarati, and Marathi.
+
+Voice search user interface
+
+- Large microphone button.
+- Clear listening animation.
+- Visible listening status.
+- Stop listening button.
+- Recognized text preview.
+- Search button.
+- Friendly error messages.
+- Easy retry option.
+
+Use browser-supported speech recognition where available.
+
+For browsers or devices without speech recognition support, provide a properly integrated alternative speech-to-text provider when configured.
+
+Do not falsely show that voice recognition is working if no supported speech service is available.
+
+Microphone access must be requested only after the user taps the microphone.
+
+Respect user privacy. Do not secretly record or continuously listen in the background.
+
+The microphone must be used for user-initiated voice search, not hidden surveillance.
+
+Voice search must work with the job category and location filters.
+
+---
+
+7. JOB CATEGORIES
+
+Create a category-based job search system.
+
+Initial categories:
+
+- Mason / Rajmistri.
+- Construction Labour.
+- General Labour.
+- Plumber.
+- Electrician.
+- Painter.
+- Tile Worker.
+- Carpenter.
+- Welder.
+- Hotel Staff.
+- Cook.
+- Waiter.
+- Housekeeping.
+- Security Guard.
+- Driver.
+- Delivery Worker.
+- Factory Worker.
+- Packing Worker.
+- Machine Operator.
+- Agriculture Worker.
+- Office Assistant.
+- Shop Staff.
+- Domestic Worker.
+- Other Jobs.
+
+Allow Admin to add, edit, deactivate, and organize categories and subcategories.
+
+Use easy-to-understand icons.
+
+---
+
+8. TWO SEPARATE JOB TYPES
+
+Daily jobs and Monthly Salary jobs must be separate.
+
+Do not mix them into one confusing list.
+
+A. Daily Jobs
+
+Show:
+
+- Job title.
+- Daily wage.
+- Work location.
+- Work hours.
+- Number of workers required.
+- Food availability.
+- Accommodation availability.
+- Overtime conditions.
+- Payment frequency.
+- Employer information.
+- Job expiry.
+- Contact or application option.
+
+B. Monthly Salary Jobs
+
+Show:
+
+- Job title.
+- Monthly salary.
+- Work location.
+- Working hours.
+- Weekly holiday.
+- Food availability.
+- Accommodation availability.
+- Overtime.
+- Leave policy.
+- Number of vacancies.
+- Joining date.
+- Employer information.
+- Job expiry.
+
+Workers must be able to filter Daily and Monthly jobs separately.
+
+---
+
+9. GLOBAL LOCATION AND OUT-OF-STATE JOB SEARCH
+
+LOBORO must support users searching for jobs outside their home state.
+
+Example:
+
+A worker from Assam, Bihar, or Uttar Pradesh should be able to find work in:
+
+- Telangana.
+- Andhra Pradesh.
+- Chennai / Tamil Nadu.
+- Karnataka.
+- Maharashtra.
+- Gujarat.
+- Other Indian states.
+- Other supported countries in the future.
+
+Provide filters for:
+
+- Country.
+- State.
+- District.
+- City.
+- Nearby location.
+- Distance.
+- Job type.
+- Salary or wage.
+- Category.
+- Food.
+- Accommodation.
+
+Show job location clearly.
+
+Do not assume that a worker wants only jobs in their home state.
+
+Allow workers to choose whether they are willing to relocate.
+
+---
+
+10. JOB POSTING AND APPLICATION SYSTEM
+
+Employers can:
+
+- Create job listings.
+- Select Daily or Monthly job type.
+- Enter salary or wage.
+- Add job location.
+- Add job description.
+- Select required skills.
+- Specify the number of vacancies.
+- Add food and accommodation details.
+- Set working hours.
+- Set expiry date.
+- Manage applicants.
+- Accept or reject applications.
+- Mark vacancies as filled.
+
+Workers can:
+
+- Search jobs.
+- Apply.
+- Save favourite jobs.
+- Share job listings.
+- Track application status.
+- Withdraw an application.
+- View employer details according to privacy rules.
+- Report suspicious jobs.
+
+Application statuses:
+
+- Applied.
+- Under Review.
+- Shortlisted.
+- Accepted.
+- Rejected.
+- Withdrawn.
+- Completed.
+
+Add job expiry and automatic removal or archival of expired listings.
+
+---
+
+11. CHAT, CONTACT AND NEGOTIATION
+
+Provide a secure communication system.
+
+Allow workers and employers to communicate about:
+
+- Salary.
+- Working hours.
+- Location.
+- Food.
+- Accommodation.
+- Joining date.
+- Other job conditions.
+
+Protect personal contact details.
+
+Allow contact sharing according to the platform's configured connection and privacy rules.
+
+Add blocking, reporting, and abuse-prevention tools.
+
+Do not expose private phone numbers publicly by default.
+
+---
+
+12. JOB FEES AND COIN PRICING
+
+Create an owner-configurable fee system.
+
+Illustrative pricing examples:
+
+- Normal Daily Job: 1 Coin = ₹10.
+- Special or Mason Job: 2 Coins = ₹20.
+- Monthly Salary Job: 30 Coins = ₹300.
+
+These are initial examples only.
+
+The Owner must be able to change all coin prices and job fees.
+
+Do not hardcode these prices throughout the app.
+
+The exact point at which a job fee is charged must be configurable by the Owner.
+
+Possible charge events may include job posting, verified connection, or another approved platform event.
+
+Show all fees clearly before the user confirms an action.
+
+Never charge users secretly.
+
+---
+
+13. PAYMENT AND COIN PURCHASE
+
+Create a secure payment architecture.
+
+Example:
+
+A user selects 10 coins for ₹100.
+
+The system should:
+
+1. Create a unique payment order.
+2. Generate a legitimate payment request or dynamic QR code through a configured payment gateway.
+3. Allow UPI or other supported payment methods.
+4. Receive payment confirmation from the gateway server webhook.
+5. Verify the order ID, amount, currency, payment status, and transaction reference on the server.
+6. Credit coins exactly once.
+7. Generate a receipt.
+8. Update transaction history.
+
+Payment statuses:
+
+- Pending.
+- Successful.
+- Failed.
+- Refunded.
+
+Never credit coins based only on a screenshot or a client-side success message.
+
+Use server-side payment verification and duplicate transaction protection.
+
+Payment gateway integration must be real and properly configured.
+
+Do not simulate real payments.
+
+---
+
+14. SECURE WALLET WITHDRAWAL AND FACE VERIFICATION
+
+Every user must be able to securely manage their payout bank account or supported UPI destination.
+
+When changing bank details or payout destination, require:
+
+1. OTP sent to the previously registered mobile number, where accessible.
+2. Separate Wallet Security PIN.
+3. Live selfie through the camera.
+4. Face match with the original registration face photograph.
+5. Liveness detection, such as blink or head movement, through a supported secure verification provider.
+
+The purpose is to prevent a person who has stolen a phone and SIM card from changing the user's bank details using OTP alone.
+
+If face verification fails:
+
+- Do not change bank details.
+- Notify the user.
+- Record the failed attempt securely.
+- Provide a legitimate account recovery route.
+
+If the user loses their phone or registered number, provide a strong recovery process that does not rely only on OTP.
+
+Allow users to report a stolen phone and temporarily freeze withdrawals.
+
+Protect biometric information and use it only with informed consent and appropriate security safeguards.
+
+Do not build fake face matching. Use a real, properly integrated verification provider.
+
+---
+
+15. RATINGS, REVIEWS AND AUTOMATIC BADGES
+
+Create a rating and badge system for both Workers and Employers.
+
+Badges must be earned automatically through verified platform activity.
+
+Do not allow ordinary Admins to manually give badges without an authorized, audited process.
+
+Suggested badge levels:
+
+- Silver.
+- Gold.
+- Diamond.
+- Platinum.
+
+The Owner can configure the exact eligibility thresholds.
+
+Worker badge criteria
+
+Consider:
+
+- Verified completed jobs.
+- Employer ratings.
+- Punctuality.
+- Work quality.
+- Professional behaviour.
+- Verified workdays.
+- Reliability.
+- Substantiated complaints.
+
+Employer badge criteria
+
+Consider:
+
+- Number of workers successfully employed.
+- Successfully completed jobs.
+- Timely wage payments.
+- Worker ratings.
+- Workplace conditions.
+- Food and accommodation commitments.
+- Substantiated complaints.
+
+Count one verified calendar day only once, even if multiple jobs were completed that day.
+
+A complaint alone must not automatically remove a badge.
+
+Investigate complaints and allow both parties to respond.
+
+Verified misconduct may result in a badge downgrade, removal, or account action.
+
+Provide appeals and audit records.
+
+Badges must not be sold.
+
+---
+
+16. LOBORO SENIORITY & LOYALTY SUPPORT
+
+Create a program called:
+
+LOBORO Seniority & Loyalty Support
+
+The purpose is to recognize long-term, reliable platform participants.
+
+A Worker or Employer who has contributed to LOBORO for a long period, maintained good ratings, completed verified work, and earned strong badges may become eligible for financial support under the program's published rules.
+
+Possible eligibility factors:
+
+- Length of membership.
+- Verified work history.
+- Completed jobs.
+- Verified workdays.
+- Badge level.
+- Ratings.
+- Reliability.
+- Substantiated complaints.
+- Program budget and availability.
+
+The Owner must be able to configure:
+
+- Eligibility conditions.
+- Participation period.
+- Age requirements, if applicable.
+- Badge requirements.
+- Support amount.
+- Available budget.
+- Approval process.
+- Payment schedule.
+
+Make it clear that this is a LOBORO-funded support program, not a government pension, insurance policy, or guaranteed benefit.
+
+Do not promise benefits that have not been funded or approved.
+
+Publish clear terms and eligibility rules.
+
+---
+
+17. WORKER SAFETY AND EMERGENCY SUPPORT
+
+This is a very important feature.
+
+LOBORO must help workers who travel from their home states to another state for employment.
+
+Example:
+
+A worker from Assam, Bihar, or Uttar Pradesh travels to Telangana, Andhra Pradesh, or Chennai for work.
+
+The worker may face:
+
+- Unpaid wages.
+- Physical abuse.
+- Harassment.
+- Unsafe accommodation.
+- Food problems.
+- Fraud.
+- Being trapped or unable to return home.
+- Missing-person concerns.
+
+Build a dedicated Help & Safety section.
+
+Emergency profile
+
+With appropriate consent, store:
+
+- Worker ID.
+- Emergency contact.
+- Family contact.
+- Home district and state.
+- Current job location.
+- Employer ID.
+- Employer details.
+- Job details.
+
+Collect only necessary information and protect it securely.
+
+Weekly safety check-in
+
+For monthly-job workers, provide an optional or consent-based weekly check-in call, initially every 7 days.
+
+The system should ask:
+
+"Are you safe?"
+
+Possible keypad responses:
+
+- Press 1: I am safe.
+- Press 2: I have a problem.
+- Press 3: I want to speak to LOBORO Admin.
+
+If there is no response:
+
+- Retry according to configured rules.
+- Send an SMS where supported.
+- Alert the authorized safety team according to the user's consent and escalation policy.
+
+No response must not automatically be treated as proof that the worker is missing.
+
+Complaint categories
+
+- Unpaid wages.
+- Physical abuse.
+- Harassment.
+- Food or accommodation problem.
+- Fraud.
+- Unsafe workplace.
+- Other emergency.
+
+Admin safety dashboard
+
+Show:
+
+- Worker ID.
+- Employer ID.
+- Job details.
+- Location.
+- Complaint category.
+- Complaint description.
+- Timestamp.
+- Urgency.
+- Current case status.
+- Action history.
+
+Case statuses:
+
+- New.
+- In Review.
+- Admin Verified.
+- Action Taken.
+- Referred.
+- Closed.
+
+The Admin should be able to call the worker, investigate, document actions, and contact relevant parties appropriately.
+
+An employer may be notified that a complaint has been received and is under review, without assuming guilt before investigation.
+
+For serious emergencies, provide access to the appropriate emergency services, including India's emergency number 112, and help the worker contact family or police where appropriate.
+
+LOBORO must not falsely claim to automatically file police cases or replace police, legal authorities, or emergency services.
+
+The safety system must remain operational even if job posting or payment features are switched off.
+
+---
+
+18. KEYPAD PHONE AND MISSED-CALL SUPPORT
+
+Many workers may not have smartphones or may not be comfortable using apps.
+
+Create an architecture for feature-phone access.
+
+Provide a dedicated LOBORO phone number using a legitimate telecom/IVR provider.
+
+Possible features:
+
+- Missed-call registration or callback.
+- IVR language selection.
+- Keypad job search.
+- Nearby job information.
+- Daily job information.
+- Monthly job information.
+- Safety check-ins.
+- Admin support connection.
+
+Example:
+
+A worker calls the LOBORO number.
+
+The IVR asks the user to select a language.
+
+The user can use keypad options to select a job category and location.
+
+The system can provide job information through voice or SMS, depending on the provider.
+
+Do not pretend that a missed call alone can deliver a complete spoken response without a callback or an appropriate telecom service.
+
+All telecom services must use a legitimate provider and show their actual costs.
+
+---
+
+19. ADMIN DASHBOARD AND OWNER MASTER CONTROL
+
+Create a powerful but secure Admin dashboard.
+
+Only the Owner has full Super Admin authority.
+
+Normal Admin accounts must never receive Owner-level privileges.
+
+Owner controls
+
+The Owner must be able to manage:
+
+- Worker accounts.
+- Employer accounts.
+- Admin accounts.
+- Job listings.
+- Job categories.
+- Subcategories.
+- Coin pricing.
+- Job posting fees.
+- Wallet rules.
+- Payment integrations.
+- Withdrawal settings.
+- Refunds.
+- Promotions.
+- Referral rewards.
+- Badges.
+- Loyalty support.
+- Notifications.
+- Emergency cases.
+- IVR and SMS settings.
+- Language settings.
+- App maintenance.
+- Country and regional availability.
+- VIP ID reservations.
+- Reports and complaints.
+
+Master ON/OFF controls
+
+Provide independent controls for:
+
+- App maintenance mode.
+- Worker registration.
+- Employer registration.
+- Job posting.
+- Job searching.
+- Daily jobs.
+- Monthly jobs.
+- Coin purchases.
+- Withdrawals.
+- Offers.
+- Notifications.
+- IVR.
+- SMS.
+- Referral system.
+- Badge system.
+- Loyalty support.
+
+Allow controls by:
+
+- Country.
+- State.
+- City.
+- User role.
+- Specific feature.
+
+Important: Turning off a feature must not silently cancel existing financial obligations, approved refunds, or emergency safety services.
+
+Admin notices
+
+Allow the Owner to send announcements to:
+
+- All users.
+- Workers only.
+- Employers only.
+- Selected cities.
+- Selected states.
+- Selected countries.
+
+Use a red announcement banner with:
+
+- Small yellow uppercase heading: LOBORO ADMIN NOTICE.
+- White announcement message.
+- Yellow action link.
+
+Allow notices to include links to jobs, offers, safety information, or other app sections.
+
+Include:
+
+- Notification history.
+- Read/unread status.
+- Expiry date.
+- Target audience.
+- Delivery status where supported.
+
+---
+
+20. REPORTING, MODERATION AND TRUST
+
+Provide tools for:
+
+- Reporting fake jobs.
+- Reporting abusive employers.
+- Reporting fraudulent workers.
+- Reporting payment problems.
+- Reporting harassment.
+- Blocking users.
+- Reviewing complaints.
+- Resolving disputes.
+- Maintaining moderation records.
+
+A complaint must be investigated fairly.
+
+Keep an auditable history of significant Admin actions.
+
+Protect users from harassment and misuse of personal information.
+
+---
+
+21. LOW-DATA AND PERFORMANCE MODE
+
+Many users may have slow internet or limited mobile data.
+
+Build the application with:
+
+- Lightweight pages.
+- Optimized images.
+- Lazy loading.
+- Minimal unnecessary animations.
+- Caching of safe public assets.
+- Efficient API calls.
+- Responsive design.
+- Clear offline or connection-error messages.
+
+Keep the golden LOBORO Coin animation lightweight.
+
+Do not sacrifice security for offline functionality.
+
+---
+
+22. TECHNICAL ARCHITECTURE
+
+Use a modern, modular architecture.
+
+Suggested initial technology:
+
+- React.
+- TypeScript.
+- Responsive CSS.
+- Supabase for authentication, database, and storage where appropriate.
+- Netlify or Cloudflare Pages for frontend hosting.
+- GitHub for version control and backups.
+
+Use secure server-side functions for:
+
+- Payment verification.
+- Coin credits and debits.
+- Withdrawals.
+- ID generation.
+- Admin authorization.
+- Sensitive account changes.
+- Safety escalations.
+
+Use database constraints and server-side validation.
+
+Do not trust client-side checks for security.
+
+Protect private information with proper access controls.
+
+Never expose secret API keys in frontend code.
+
+Provide database schema and setup instructions.
+
+---
+
+23. PWA AND ANDROID READINESS
+
+The first release should be a Progressive Web App (PWA).
+
+Make it installable on Android phones.
+
+Required files:
+
+- index.html.
+- manifest.json.
+- service-worker.js.
+- Appropriate icons.
+- Application source files.
+
+Manifest requirements:
+
+- name: LOBORO.
+- short_name: LOBORO.
+- description: Global Job & Service.
+- display: standalone.
+- Appropriate start_url and scope.
+- Theme colour: #0B1F3A.
+- Background colour: #0B1F3A.
+- Proper app icons.
+
+Add the correct manifest link to index.html.
+
+Register the service worker correctly.
+
+Do not claim that PWA installation works unless the required files and configuration are present.
+
+Prepare the project so it can later be packaged as an Android application.
+
+Create proper splash-screen and app icon assets using the LOBORO logo.
+
+---
+
+24. PRIVACY AND SECURITY
+
+Security must be built into the architecture from the beginning.
+
+Requirements:
+
+- Secure authentication.
+- OTP verification.
+- Strong password hashing where passwords are used.
+- Role-based authorization.
+- Owner-only permissions.
+- Server-side validation.
+- Secure database policies.
+- Payment verification.
+- Audit logs.
+- Rate limiting.
+- Abuse prevention.
+- Secure file uploads.
+- Protection against common web vulnerabilities.
+- Privacy controls.
+- Consent for location, microphone, camera, and biometric processing.
+
+Never expose:
+
+- Passwords.
+- OTPs.
+- Wallet security PINs.
+- Private bank details.
+- Biometric templates.
+- Secret API keys.
+
+Even Admins must not be able to read users' OTPs or wallet security PINs.
+
+---
+
+25. DEVELOPMENT RULES — VERY IMPORTANT
+
+Do not try to build every complex backend integration as a fake frontend simulation.
+
+Separate the project into clearly defined modules.
+
+Use reusable components and clean code.
+
+Keep the application easy to maintain and expand.
+
+Do not delete working features when adding new ones.
+
+Do not replace existing working files unnecessarily.
+
+Do not use placeholder buttons that appear functional but do nothing.
+
+For features that require external providers, create a clear integration interface and document the exact setup needed.
+
+Never claim that a payment, OTP, face verification, IVR call, SMS, or withdrawal is operational until the real service is connected and tested.
+
+Use realistic sample data only for development previews and clearly identify it as demo data.
+
+---
+
+26. REQUIRED DEVELOPMENT PHASES
+
+Build the project in phases.
+
+Do not skip phases.
+
+PHASE 1 — BRAND, UI AND FRONTEND
+
+Create:
+
+- Professional LOBORO logo and icon assets.
+- Dark navy blue and yellow design system.
+- Home page.
+- Login and registration screens.
+- Worker dashboard.
+- Employer dashboard.
+- Admin dashboard interface.
+- Job categories.
+- Daily Jobs screen.
+- Monthly Jobs screen.
+- Search and filters.
+- Voice Search microphone interface.
+- Language selector.
+- Animated golden LOBORO Coin.
+- Wallet interface.
+- Notifications.
+- Help & Safety screens.
+- Profile and Settings.
+- Share App feature.
+- Responsive mobile design.
+
+Use sample data only where necessary and label it clearly.
+
+PHASE 2 — DATABASE AND AUTHENTICATION
+
+Create:
+
+- Database schema.
+- Worker registration.
+- Employer registration.
+- Unique LB ID generation.
+- Secure login.
+- OTP integration interface.
+- Role-based access.
+- Owner-only Super Admin authorization.
+- Profile management.
+
+PHASE 3 — JOB SYSTEM
+
+Implement:
+
+- Job posting.
+- Job searching.
+- Daily and Monthly separation.
+- Location filters.
+- Applications.
+- Employer management.
+- Chat and privacy rules.
+- Ratings and reviews.
+- Job reporting.
+
+PHASE 4 — WALLET AND PAYMENTS
+
+Implement:
+
+- Wallet ledger.
+- Coin purchase.
+- Gateway integration.
+- Verified payment webhooks.
+- Withdrawals.
+- Bank detail management.
+- Wallet Security PIN.
+- Face verification integration.
+- Transaction history.
+
+PHASE 5 — SAFETY AND TELECOM
+
+Implement:
+
+- Emergency contacts.
+- Weekly check-ins.
+- Safety dashboard.
+- Complaint handling.
+- IVR integration.
+- Missed-call or callback system.
+- SMS alerts.
+- Emergency escalation.
+
+PHASE 6 — BADGES AND LOYALTY
+
+Implement:
+
+- Automatic ratings-based badges.
+- Worker and Employer criteria.
+- Verified workday calculation.
+- Badge progression.
+- Appeals.
+- Seniority & Loyalty Support.
+
+PHASE 7 — GLOBAL READINESS AND FINAL TESTING
+
+Implement:
+
+- Full language system.
+- Translation integration.
+- Country and regional configuration.
+- PWA validation.
+- Performance optimization.
+- Accessibility testing.
+- Security testing.
+- Android readiness.
+
+---
+
+27. WHAT I EXPECT YOU TO DELIVER
+
+First, inspect the complete requirements and propose a clean project architecture.
+
+Then start building Phase 1.
+
+Provide:
+
+1. Complete source code.
+2. Proper project folder structure.
+3. Professional LOBORO logo and app icon assets.
+4. Responsive frontend.
+5. Voice Search interface.
+6. Golden animated LOBORO Coin.
+7. PWA files.
+8. Setup instructions.
+9. Deployment instructions for Netlify or Cloudflare Pages.
+10. A clear list of backend services that still require configuration.
+
+Do not give me only a design description.
+
+Generate actual working project files.
+
+If the project is too large for one response, build it phase by phase while preserving the same architecture and requirements.
+
+Before changing existing project files, inspect them and preserve working code.
+
+FINAL INSTRUCTION:
+
+LOBORO must be a simple, trustworthy, accessible, professional global job and service platform.
+
+It must serve both educated users and workers who cannot comfortably read or type.
+
+The voice microphone search, multilingual interface, separate Daily and Monthly job systems, secure wallet, golden animated LOBORO Coin, worker safety system, automatic badges, loyalty support, and Owner Master Control are essential requirements.
+
+Never use green anywhere in the design.
+
+Start with Phase 1 and provide the actual code and project files.

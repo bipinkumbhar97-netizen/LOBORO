@@ -1,0 +1,6 @@
+{
+  "name": "LOBORO",
+  "description": "Global Job & Service — Multilingual Daily & Monthly Job Platform with Voice Search, Golden LOBORO Coin Wallet, Worker Safety, and Owner Control",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
