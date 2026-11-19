@@ -20,13 +20,21 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Ensure Gradle Wrapper and Build APK
+      - name: Organize files and build APK
         run: |
-          if [ ! -f ./gradlew ]; then
-            gradle wrapper --gradle-version 8.7 --distribution-type bin
-          fi
+          mkdir -p app/src/main/res/values app/src/main/res/mipmap-xxxhdpi app/src/main/res/drawable app/src/main/res/font app/src/main/java/com/loboro
+          mv build.gradle.kts app/build.gradle.kts 2>/dev/null || true
+          mv AndroidManifest.xml app/src/main/ 2>/dev/null || true
+          mv *.kt app/src/main/java/com/loboro/ 2>/dev/null || true
+          mv colors.xml strings.xml themes.xml backup_rules.xml data_extraction_rules.xml app/src/main/res/values/ 2>/dev/null || true
+          mv *.ttf app/src/main/res/font/ 2>/dev/null || true
+          mv ic_launcher*.png loboro_launcher_icon*.png app/src/main/res/mipmap-xxxhdpi/ 2>/dev/null || true
+          mv ic_launcher*.xml ic_loboro_notification.xml app/src/main/res/drawable/ 2>/dev/null || true
+          [ -f settings.gradle.kts ] || printf 'rootProject.name = "LOBORO"\ninclude(":app")\n' > settings.gradle.kts
+          [ -f app/build.gradle.kts ] || printf 'plugins {\n    id("com.android.application") version "8.5.0" apply false\n    id("org.jetbrains.kotlin.android") version "1.9.24" apply false\n}\n' > app/build.gradle.kts
+          [ -f ./gradlew ] || gradle wrapper --gradle-version 8.7 --distribution-type bin
           chmod +x ./gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
