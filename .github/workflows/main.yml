@@ -34,7 +34,7 @@ jobs:
           mv ic_launcher*.png loboro_launcher_icon*.png app/src/main/res/mipmap-xxxhdpi/ || true
           mv ic_launcher*.xml ic_loboro_notification.xml app/src/main/res/drawable/ || true
           if [ -f build.gradle.kts ]; then mv build.gradle.kts app/build.gradle.kts; fi
-          python3 -c 'open("app/src/main/res/values/data_extraction_rules.xml","w").write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<data-extraction-rules>\n    <cloud-backup disableIfNoEncryptionCapabilities=\"true\">\n        <exclude domain=\"root\"/>\n    </cloud-backup>\n    <device-transfer>\n        <exclude domain=\"root\"/>\n    </device-transfer>\n</data-extraction-rules>\n")'
+          python3 -c 'open("app/src/main/res/values/data_extraction_rules.xml","w").write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<data-extraction-rules>\n    <cloud-backup disableIfNoEncryptionCapabilities=\"false\"/>\n    <device-transfer/>\n</data-extraction-rules>\n")'
           printf 'android.useAndroidX=true\nandroid.nonTransitiveRClass=true\norg.gradle.jvmargs=-Xmx2048m\n' > gradle.properties
           printf 'pluginManagement {\n  repositories {\n    google()\n    mavenCentral()\n    gradlePluginPortal()\n  }\n}\ndependencyResolutionManagement {\n  repositories {\n    google()\n    mavenCentral()\n  }\n}\nrootProject.name = "LOBORO"\ninclude(":app")\n' > settings.gradle.kts
           printf 'plugins {\n  id("com.android.application") version "8.5.0" apply false\n  id("org.jetbrains.kotlin.android") version "2.0.0" apply false\n  id("org.jetbrains.kotlin.plugin.compose") version "2.0.0" apply false\n}\n' > build.gradle.kts
