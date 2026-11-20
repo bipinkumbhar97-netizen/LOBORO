@@ -32,13 +32,11 @@ jobs:
                    app/src/main/res/mipmap-xxxhdpi \
                    app/src/main/java/com/loboro
 
-          # Move data_extraction_rules.xml from values/ to xml/ if present
           if [ -f "app/src/main/res/values/data_extraction_rules.xml" ]; then
             mkdir -p app/src/main/res/xml
             mv app/src/main/res/values/data_extraction_rules.xml app/src/main/res/xml/data_extraction_rules.xml
           fi
 
-          # Safely move launcher icon only if matching file(s) exist
           shopt -s nullglob
           icons=(loboro_launcher_icon*.png app/src/main/res/drawable/loboro_launcher_icon*.png)
           if [ ${#icons[@]} -gt 0 ]; then
@@ -48,4 +46,8 @@ jobs:
           fi
           shopt -u nullglob
 
+          if [ ! -f "./gradlew" ]; then
+            gradle wrapper --gradle-version 8.7 --distribution-type bin
+          fi
+          chmod +x ./gradlew
           ./gradlew assembleDebug --stacktrace
