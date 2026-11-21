@@ -22,7 +22,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Point :app to root directory and build APK
+      - name: Configure root project and build APK
         run: |
           cat << 'EOF' > settings.gradle.kts
           pluginManagement {
@@ -40,8 +40,6 @@ jobs:
             }
           }
           rootProject.name = "LOBORO"
-          include(":app")
-          project(":app").projectDir = file(".")
           EOF
 
           if [ ! -f "./gradlew" ]; then
